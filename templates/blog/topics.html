@@ -1,0 +1,25 @@
+{% extends "blog/base.html" %}
+
+
+{% block content %}
+<div class="jumbotron " style="background-color: #303773;" >
+<h1 class="topic-headings" style="color: white;"  >Discussions</h1>
+<div class="topic-headings">
+<ul class="list-group-sm d-inline ">
+	{% for topic in topics %}
+	<li  class="list-group-item listings" > 
+			<h3 class="topic-headings">
+				<a style="color: white;"  href="/topics/{{topic.id}}/">{{topic}}</a>
+			</h3>
+	</li>
+	{% empty %}
+	<h3>
+			<li> No topics have been added yet.</li>
+
+	</h3>
+	{% endfor %}
+</ul>
+</div>
+</div>
+
+{% endblock content %}

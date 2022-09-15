@@ -1,0 +1,29 @@
+body{
+	background-color: #e6e1e7
+ !important
+}
+.call-to-action{
+	background-color: #2e0749 !important
+
+}
+
+.link-color:hover{
+	color: grey !important
+	
+}
+.list{
+	list-style-type: none;
+}
+.listings{
+	background-color: grey !important
+
+}
+.topic-headings{
+	text-align: center;
+}
+.home-tron{
+	background-color: grey !important;  
+	margin-top: 60px;
+	border: 3px solid #303773;
+
+}

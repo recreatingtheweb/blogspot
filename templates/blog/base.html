@@ -1,0 +1,53 @@
+{% load static %}
+
+{% load bootstrap4 %}
+
+<!doctype html>
+<html lang='en'>
+<head>
+	<link rel="stylesheet" href="{% static 'blog/style.css' %}">
+
+	<meta charset="utf-8">
+	<meta name='viewport' content="width=device-width, inital-scale=1, shrink-to-fit=no">
+	<title>My Blog</title>
+	{% bootstrap_css %}
+	{% bootstrap_javascript jquery='full' %}
+</head>
+<body>
+	<nav  class="navbar navbar-expand-md navbar-light  mb-4 border" style="background-color: #2e0749;" >
+		<a style="color: white;" class="navbar-brand" href="/"> BlogSpot</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a style="color: white;" class="nav-link" href="/topics/">Discussions</a>
+				</li>	
+			</ul>
+			
+			
+		</div>
+	</nav>
+
+	<main role="main" class="container">
+		<div class="pb-2 mb-2 ottom">
+			{% block page_header %}{% endblock page_header %}
+			
+		</div>
+	</main>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <p>
+	<a href="{% url 'blog:index'%}">Welcome to my blog!</a>-
+	<a href="{% url 'blog:topics'%}">Topics</a>
+
+</p>
+ -->
+{% block content %}{% endblock content %}
