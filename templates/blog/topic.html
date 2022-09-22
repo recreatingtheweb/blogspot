@@ -15,7 +15,7 @@
 			{{entry.date_added|date:'M d, Y '}}
 		</h4>
 		<div class="card-body">
-			{{ entry.text|linebreaks }}
+			<p id="topic_text">{{ entry.text|linebreaks }}</p>
 		</div>
 	</div>
 	{% empty %}

@@ -17,8 +17,12 @@ from django.conf.urls.static import static
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
 STATIC_URL = 'static/'
+
+if os.environ.get('DEBUG') == 'True':
+    DEBUG = True
+elif os.environ.get('DEBUG') == 'False':
+    DEBUG = False 
 
 
 
@@ -46,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'fontawesomefree',
     #Thir party app
     'bootstrap4',
 ]

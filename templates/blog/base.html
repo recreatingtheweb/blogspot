@@ -6,6 +6,9 @@
 <html lang='en'>
 <head>
 	<link rel="stylesheet" href="{% static 'blog/style.css' %}">
+	<link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+
 
 	<meta charset="utf-8">
 	<meta name='viewport' content="width=device-width, inital-scale=1, shrink-to-fit=no">
@@ -15,8 +18,9 @@
 </head>
 <body>
 	<nav  class="navbar navbar-expand-md navbar-light  mb-4 border" style="background-color: #2e0749;" >
-		<a style="color: white;" class="navbar-brand" href="/"> BlogSpot</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+		<a style="color: white;" class="navbar-brand" href="/"> Devtalk	<i class="fa-regular fa-code"></i></a>
+		<a style="color: white;" class="nav-link" href="/topics/">Discussions</a>
+		<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<ul class="navbar-nav mr-auto">
@@ -26,10 +30,10 @@
 			</ul>
 			
 			
-		</div>
+		</div> -->
 	</nav>
 
-	<main role="main" class="container">
+	<main role="main"  >
 		<div class="pb-2 mb-2 ottom">
 			{% block page_header %}{% endblock page_header %}
 			
